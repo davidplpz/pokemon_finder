@@ -15,6 +15,7 @@ const Form: React.FC<FormProps> = ({ onSubmit }) => {
   };
 
   const onClickRandomHandler = () => {
+    setQuery("");
     const randomPokemon = Math.floor(Math.random() * 1015).toString();
     onSubmit(randomPokemon);
   };

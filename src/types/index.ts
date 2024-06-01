@@ -2,6 +2,7 @@ export interface Pokemon {
     id: number;
     name: string;
     img: string;
+    types: string[];
 }
 
 export interface CardProps {
@@ -10,4 +11,12 @@ export interface CardProps {
 
 export interface FormProps {
     onSubmit: (query: string) => void;
+}
+
+export interface ApiPokemonType {
+    slot: number;
+    type: {
+        name: string,
+        url: string
+    }
 }
