@@ -3,6 +3,7 @@ export interface Pokemon {
     name: string;
     img: string;
     types: string[];
+    cry: string;
 }
 
 export interface CardProps {

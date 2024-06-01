@@ -1,4 +1,4 @@
-import { Pokemon, ApiPokemonType } from "../types";
+import { Pokemon, ApiPokemonType} from "../types";
 import { capitalize } from "../utils/string";
 
 
@@ -12,14 +12,15 @@ const fetchPokemon = async (pokemonName: string):Promise<Pokemon> => {
         }
 
         const data = await response.json();
-        const { id, name, sprites, types } = data;
+        const { id, name, sprites, types, cries } = data;
         const img = sprites.front_default;
         
         const pokemon: Pokemon = {
             id,
             name,
             img,
-            types: types.map((objType: ApiPokemonType) => capitalize(objType.type.name))
+            types: types.map((objType: ApiPokemonType) => capitalize(objType.type.name)),
+            cry: cries.latest
         };
         
         return pokemon;

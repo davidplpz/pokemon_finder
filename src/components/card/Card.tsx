@@ -1,4 +1,5 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
 import { capitalize } from "../../utils/string";
 import "./Card.css";
 import { CardProps } from "../../types";
@@ -27,6 +28,7 @@ const Card: React.FC<CardProps> = ({ pokemon }) => {
         <h3>{`Número en la Pokedex: ${pokemon.id}`}</h3>
         <h4>{`Nombre: ${capitalize(pokemon.name)}`}</h4>
         <h4>{printType()}</h4>
+        <ReactAudioPlayer src={pokemon.cry} autoPlay={false} controls />
       </div>
     </div>
   );
