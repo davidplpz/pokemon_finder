@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Pokemon Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido al Pokemon Finder!
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web simple que te permite buscar información sobre diferentes Pokémon utilizando la [PokeAPI](https://pokeapi.co/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- **Búsqueda por nombre:** Ingresa el nombre de un Pokémon en el campo de búsqueda y obtén información sobre él.
+- **Búsqueda aleatoria:** Presiona el botón "Aleatorio" para obtener información sobre un Pokémon al azar.
+- **Visualización de detalles:** La aplicación mostrará la imagen, el número en la Pokédex y el nombre del Pokémon buscado.
+- **Gestión de errores:** Si el Pokémon buscado no se encuentra, la aplicación mostrará un mensaje de error.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React:** El frontend de la aplicación está construido con React, una biblioteca de JavaScript para construir interfaces de usuario.
+- **PokeAPI:** Se utiliza la PokeAPI para obtener datos sobre los Pokémon, como imágenes, nombres y números en la Pokédex.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Instalación y ejecución
+
+1. Clona este repositorio en tu máquina local:
+
+```
+git clone https://github.com/tu-usuario/pokemon-finder.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Instala las dependencias:
+
+```
+cd pokemon-finder
+npm install
+```
+
+3. Ejecuta la aplicación:
+
+```
+npm start
+```
+
+La aplicación estará disponible en `http://localhost:5173/`.
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si encuentras algún error o tienes alguna idea para mejorar la aplicación, no dudes en abrir un problema o enviar un pull request.
+
+## Agradecimientos
+
+Este proyecto fue creado como parte de una práctica de desarrollo web y se inspiró en la curiosidad y el amor por los Pokémon.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
