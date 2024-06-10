@@ -5,7 +5,7 @@ import Card from "./components/card/Card";
 import Header from "./components/header/Header";
 import { Pokemon } from "./types";
 import Form from "./components/form/Form";
-import "./App.css";
+import "./App.scss";
 
 const App = () => {
   const [pokemon, setPokemon] = useState<Pokemon | null>(null);

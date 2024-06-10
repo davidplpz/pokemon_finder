@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .card__container {
   display: flex;
   flex-direction: column;
@@ -19,13 +21,13 @@
 
 .card__image img {
   border-radius: 50%;
-  border: 2px solid #ffcb05;
+  border: 2px solid $card-image-border;
   width: 200px;
   height: 200px;
 }
 
 .card__info {
-  border-top: 2px solid #d0d0d0;
+  border-top: 2px solid $card-info-border;
   padding: 16px;
   text-align: center;
   width: 100%;
@@ -34,7 +36,7 @@
 .card__info h3,
 .card__info h4 {
   margin: 10px 0;
-  color: #2a75bb;
+  color: $bluish;
 }
 
 .card__info h4 {
