@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import "./Form.css";
+import "./Form.scss";
 import { FormProps } from "../../types";
 
 const Form: React.FC<FormProps> = ({ onSubmit }) => {

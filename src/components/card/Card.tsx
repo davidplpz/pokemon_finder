@@ -1,7 +1,7 @@
 import React from "react";
 import ReactAudioPlayer from "react-audio-player";
 import { capitalize } from "../../utils/string";
-import "./Card.css";
+import "./Card.scss";
 import { CardProps } from "../../types";
 
 const Card: React.FC<CardProps> = ({ pokemon }) => {
