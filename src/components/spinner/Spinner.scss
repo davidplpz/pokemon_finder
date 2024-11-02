@@ -1,4 +1,4 @@
-@import '../../styles/colors.scss';
+@use '../../styles/colors.scss';
 
 .spinner {
     position: relative;
@@ -13,9 +13,9 @@
     height: 100%;
     display: block;
     animation: spinner-b4c8mmmd 0.5s backwards, spinner-49opz7md 1.25s 0.5s infinite ease;
-    border: 5.6px solid $spinner;
+    border: 5.6px solid colors.$spinner;
     border-radius: 50%;
-    box-shadow: 0 -33.6px 0 -5.6px $spinner;
+    box-shadow: 0 -33.6px 0 -5.6px colors.$spinner;
     position: absolute;
  }
  
@@ -25,7 +25,7 @@
  
  @keyframes spinner-b4c8mmmd {
     from {
-       box-shadow: 0 0 0 -5.6px $spinner;
+       box-shadow: 0 0 0 -5.6px colors.$spinner;
     }
  }
  

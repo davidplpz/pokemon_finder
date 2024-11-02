@@ -1,10 +1,10 @@
-@import '../../styles/colors.scss';
+@use '../../styles/colors.scss';
 
 .header {
   width: 100%;
   padding: 20px 0;
-  background-color: $header-background;
-  color: $header-text-color;
+  background-color: colors.$header-background;
+  color: colors.$header-text-color;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px 10px 0 0;
